@@ -50,7 +50,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/samsung/melius-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/samsung/melius-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    vendor/samsung/melius-common/proprietary/etc/snd_soc_msm/snd_soc_msm_Sitar:system/etc/snd_soc_msm/snd_soc_msm_Sitar \
     vendor/samsung/melius-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/samsung/melius-common/proprietary/lib/libNimsWrap.so:system/lib/libNimsWrap.so \
     vendor/samsung/melius-common/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
