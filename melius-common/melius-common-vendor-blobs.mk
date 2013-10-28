@@ -43,13 +43,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
     vendor/samsung/melius-common/proprietary/lib/libgsl.so:system/lib/libgsl.so \
     vendor/samsung/melius-common/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
+    vendor/samsung/melius-common/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so \
     vendor/samsung/melius-common/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
     vendor/samsung/melius-common/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
     vendor/samsung/melius-common/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
     vendor/samsung/melius-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/samsung/melius-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/samsung/melius-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+    vendor/samsung/melius-common/proprietary/etc/snd_soc_msm/snd_soc_msm_Sitar:system/etc/snd_soc_msm/snd_soc_msm_Sitar \
     vendor/samsung/melius-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+    vendor/samsung/melius-common/proprietary/lib/libNimsWrap.so:system/lib/libNimsWrap.so \
+    vendor/samsung/melius-common/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/samsung/melius-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/samsung/melius-common/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/samsung/melius-common/proprietary/bin/sec-ril:system/bin/sec-ril \
@@ -128,6 +132,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/melius-common/proprietary/lib/libTsAccm.so:system/lib/libTsAccm.so \
     vendor/samsung/melius-common/proprietary/lib/libTsAwb.so:system/lib/libTsAwb.so \
+    vendor/samsung/melius-common/proprietary/lib/libmmcamera_wavelet_lib.so:system/lib/libmmcamera_wavelet_lib.so \
+    vendor/samsung/melius-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/melius-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/melius-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/melius-common/proprietary/bin/qseecomd:system/bin/qseecomd \
