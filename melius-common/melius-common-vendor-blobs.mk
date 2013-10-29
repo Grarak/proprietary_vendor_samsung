@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/samsung/melius-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/samsung/melius-common/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/samsung/melius-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/samsung/melius-common/proprietary/bin/thermald:system/bin/thermald \
     vendor/samsung/melius-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
     vendor/samsung/melius-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
@@ -131,9 +130,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/melius-common/proprietary/lib/libTsAccm.so:system/lib/libTsAccm.so \
     vendor/samsung/melius-common/proprietary/lib/libTsAwb.so:system/lib/libTsAwb.so \
-    vendor/samsung/melius-common/proprietary/lib/libmmcamera_wavelet_lib.so:system/lib/libmmcamera_wavelet_lib.so \
-    vendor/samsung/melius-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
-    vendor/samsung/melius-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/melius-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/melius-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/samsung/melius-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
