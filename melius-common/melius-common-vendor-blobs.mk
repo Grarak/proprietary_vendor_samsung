@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/samsung/melius-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/samsung/melius-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+    vendor/samsung/melius-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/samsung/melius-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/samsung/melius-common/proprietary/lib/libNimsWrap.so:system/lib/libNimsWrap.so \
     vendor/samsung/melius-common/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
@@ -139,31 +140,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/samsung/melius-common/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/melius-common/proprietary/lib/libtzplayready.so:system/lib/libtzplayready.so \
-    vendor/samsung/melius-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/melius-common/proprietary/bin/lpmkey:system/bin/lpmkey \
-    vendor/samsung/melius-common/proprietary/bin/playlpm:system/bin/playlpm \
-    vendor/samsung/melius-common/proprietary/lib/libQmageAndroidDecoderPaddingSo.so:system/lib/libQmageAndroidDecoderPaddingSo.so \
-    vendor/samsung/melius-common/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-    vendor/samsung/melius-common/proprietary/media/battery_error.qmg:system/media/battery_error.qmg \
-    vendor/samsung/melius-common/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg
+    vendor/samsung/melius-common/proprietary/lib/libwvm.so:system/lib/libwvm.so
