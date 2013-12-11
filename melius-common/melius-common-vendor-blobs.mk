@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
     vendor/samsung/melius-common/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/samsung/melius-common/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
-    vendor/samsung/melius-common/proprietary/lib/libcsd-client.so:system/lib/libcsd-client.so \
     vendor/samsung/melius-common/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
     vendor/samsung/melius-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
     vendor/samsung/melius-common/proprietary/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
@@ -51,8 +50,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/samsung/melius-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     vendor/samsung/melius-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-    vendor/samsung/melius-common/proprietary/lib/libNimsWrap.so:system/lib/libNimsWrap.so \
-    vendor/samsung/melius-common/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/samsung/melius-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/samsung/melius-common/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/samsung/melius-common/proprietary/bin/sec-ril:system/bin/sec-ril \
