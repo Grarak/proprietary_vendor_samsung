@@ -60,7 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/melius-common/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/melius-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/samsung/melius-common/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/melius-common/proprietary/lib/libcordon.so:system/lib/libcordon.so \
     vendor/samsung/melius-common/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/samsung/melius-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
