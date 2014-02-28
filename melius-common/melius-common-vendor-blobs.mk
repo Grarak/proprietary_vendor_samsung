@@ -87,7 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/melius-common/proprietary/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/melius-common/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/samsung/melius-common/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/samsung/melius-common/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
+    vendor/samsung/melius-common/proprietary/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so \
     vendor/samsung/melius-common/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/samsung/melius-common/proprietary/lib/libchromatix_imx175_antishake.so:system/lib/libchromatix_imx175_antishake.so \
     vendor/samsung/melius-common/proprietary/lib/libchromatix_imx175_default_video.so:system/lib/libchromatix_imx175_default_video.so \
