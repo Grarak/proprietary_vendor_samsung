@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+/* Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above
+ *       copyright notice, this list of conditions and the following
+ *       disclaimer in the documentation and/or other materials provided
+ *       with the distribution.
+ *     * Neither the name of The Linux Foundation nor the names of its
+ *       contributors may be used to endorse or promote products derived
+ *       from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+-->
+<HintConfigs>
+    <Powerhint>
+
+        <!-- camera preview -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 998Mhz -->
+        <!--L CPU - Set hispeed load 95 -->
+        <!--Change min freq to 1016Mhz -->
+        <!--Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x14,(20) -->
+        <!--Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x1E,(30) -->
+        <!--LPM disable : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 0x01-->
+        <Config
+            Id="0x00001331" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x3F9, 0x41440100, 0x5F, 0x40800100, 0x3F8, 0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x40400000, 0x01"/>
+
+        <!-- Dual camera : POWER_HINT_ID_REAR_BOKEH_PREVIEW -->
+        <!--cpu-llcc-bw sample_ms    : MPCTLV3_CPUBW_HWMON_SAMPLE_MS  (0x41820000) : 0x14( 20) -->
+        <!--cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT   (0x4180C000) : 0x00(  0) -->
+        <!--cpu-llcc-bw io_percent   : MPCTLV3_CPUBW_HWMON_IO_PERCENT (0x41808000) : 0x64(100) -->
+        <!--llcc-ddr-bw sample_ms    : MPCTLV3_LLCBW_HWMON_SAMPLE_MS  (0x4300C000) : 0x14( 20) -->
+        <!--llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT   (0x43008000) : 0x00(  0) -->
+        <!--llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_IO_PERCENT (0x43004000) : 0x64(100) -->
+        <!--silver cluster min freq  : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 0x3F8(1016) -->
+        <!--gold cluster min freq    : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0   (0x40800000) : 0x3F8(1016) -->
+        <Config
+            Id="0x00001332" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x41820000, 0x14, 0x4180C000, 0x00, 0x41808000, 0x64,
+                       0x4300C000, 0x14, 0x43008000, 0x00, 0x43004000, 0x64,
+                       0x40800100, 0x3F8, 0x40800000, 0x3F8"/>
+
+        <!-- video encode FHD 30 fps : POWER_HINT_ID_VIDEO_ENCODE_FHD_30FPS_FRONT -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 998Mhz -->
+        <!--L CPU - Set hispeed load 95 -->
+        <!--Change min freq to 1016Mhz -->
+        <!--Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x14,(20) -->
+        <!--Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x1E,(30) -->
+        <!--LPM disable : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 0x01-->
+        <Config
+            Id="0x00001333" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x3F9, 0x41440100, 0x5F, 0x40800100, 0x3F8, 0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x40400000, 0x01"/>
+
+        <!-- video encode FHD 30 fps : POWER_HINT_ID_VIDEO_ENCODE_FHD_30FPS -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 998Mhz -->
+        <!--L CPU - Set hispeed load 95 -->
+        <!--Change min freq to 1016Mhz -->
+        <!--Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x14,(20) -->
+        <!--Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x1E,(30) -->
+        <!--LPM disable : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 0x01-->
+        <Config
+            Id="0x00001334" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x3F9, 0x41440100, 0x5F, 0x40800100, 0x3F8, 0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x40400000, 0x01"/>
+
+        <!-- video encode UHD 30 fps : POWER_HINT_ID_VIDEO_ENCODE_UHD30 -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 998Mhz -->
+        <!--L CPU - Set hispeed load 95 -->
+        <!--Change min freq to 1016Mhz -->
+        <!--Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x14,(20) -->
+        <!--Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x1E,(30) -->
+        <!--LPM disable : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 0x01-->
+        <Config
+            Id="0x00001335" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x3F9, 0x41440100, 0x5F, 0x40800100, 0x3F8, 0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x40400000, 0x01"/>
+
+        <!-- video encode FHD 60 fps : POWER_HINT_ID_VIDEO_ENCODE_FHD_60FPS -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--BWMON - Set sample_ms 20 -->
+        <!--Change min freq to 748Mhz -->
+        <!--LPM disable : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 0x01-->
+        <Config
+            Id="0x00001336" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x41820000, 0x14, 0x40800100, 0x2EC, 0x40400000, 0x01"/>
+
+        <!-- video encode UHD 60 fps : POWER_HINT_ID_VIDEO_ENCODE_UHD60 -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 998Mhz -->
+        <!--L CPU - Set hispeed load 95 -->
+        <!--Change min freq to 1016Mhz -->
+        <!--Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x14,(20) -->
+        <!--Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x1E,(30) -->
+        <!--LPM disable : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 0x01-->
+        <Config
+            Id="0x00001337" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x3F9, 0x41440100, 0x5F, 0x40800100, 0x3F8, 0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x40400000, 0x01"/>
+
+        <!-- camera HFR : POWER_HINT_ID_VIDEO_ENCODE_HFR -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--BWMON - Set sample_ms 20 -->
+        <Config
+            Id="0x00001338" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x41820000, 0x14, 0x40800100, 0x639, 0x40800000, 0x6AC, 0x41000100, 0x6, 0x40C20000, 0x1E, 0x40C1C000, 0x28, 0x40400000, 0x01"/>
+
+        <!-- Super Steady video mode : POWER_HINT_ID_VIDEO_ENCODE_UHD30_HDR10 -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->		
+        <!-- llcc-ddr-bw io_percent : MPCTLV3_LLCBW_HWMON_IO_PERCENT (0x43004000) : 0x64(100) -->		
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x14(20) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 38 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x14(20) -->
+        <!-- cpu-llcc-bw io_percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 0x64(100) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 91 -->		
+        <!-- silver cluster min freq : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1593 -->
+        <!-- gold cluster min freq : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 1708 -->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x14,(20) -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x1E,(30) -->
+        <!-- LPM disable : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 0x01-->
+        <!-- MPCTLV3_GPU_MIN_POWER_LEVEL         : (0x42804000) : 0x1(700Mhz)-->
+		<!-- min cpus    : MPCTLV3_MIN_ONLINE_CPU_CLUSTER_LITTLE (0x41000100) : 0x6(6) -->
+        <Config
+            Id="0x00001339" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x43008000, 0x00, 0x43004000, 0x64, 0x4300C000, 0xA, 0x43000000, 38, 0x4180C000, 0x00, 
+            0x41820000, 0xA, 0x41808000, 0x64, 0x41800000, 91, 0x40800100, 0x639, 0x40800000, 0x6AC, 
+            0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x40400000, 0x01, 0x42804000, 0x1, 0x41000100, 0x6 "/>
+
+        <!-- camera VT Call FHD 30fps : POWER_HINT_ID_VIDEO_CALL_FHD_30FPS -->
+        <!--cpu-llcc-bw sample_ms    : MPCTLV3_CPUBW_HWMON_SAMPLE_MS  (0x41820000) : 0x14( 20) -->
+        <!--cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT   (0x4180C000) : 0x00(  0) -->
+        <!--cpu-llcc-bw io_percent   : MPCTLV3_CPUBW_HWMON_IO_PERCENT (0x41808000) : 0x64(100) -->
+        <!--llcc-ddr-bw sample_ms    : MPCTLV3_LLCBW_HWMON_SAMPLE_MS  (0x4300C000) : 0x14( 20) -->
+        <!--llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT   (0x43008000) : 0x00(  0) -->
+        <!--llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_IO_PERCENT (0x43004000) : 0x64(100) -->
+        <!--silver cluster min freq  : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 0x3F8(1016) -->
+        <!--gold cluster min freq    : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0   (0x40800000) : 0x3F8(1016) -->
+        <!--min cpus                 : MPCTLV3_MIN_ONLINE_CPU_CLUSTER_LITTLE (0x41000100) : 0x6(6) -->
+        <Config
+            Id="0x0000133A" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x41820000, 0x14, 0x4180C000, 0x00, 0x41808000, 0x64,
+                       0x4300C000, 0x14, 0x43008000, 0x00, 0x43004000, 0x64,
+                       0x40800100, 0x3F8, 0x40800000, 0x3F8, 0x41000100, 0x6"/>
+
+        <!-- video encode Live Focus : POWER_HINT_ID_VIDEO_ENCODE_LIVE_FOCUS -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 998Mhz -->
+        <!--L CPU - Set hispeed load 95 -->
+        <!--Change min freq to 1016Mhz -->
+        <!--Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x14,(20) -->
+        <!--Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x1E,(30) -->
+        <!--LPM disable : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 0x01-->
+        <!--MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0 : (0x40804000) : 0x613(1555.2Mhz)-->
+        <!--MPCTLV3_GPU_MAX_POWER_LEVEL         : (0x42808000) : 0x3(430Mhz)-->
+        <Config
+            Id="0x0000133B" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x3F9, 0x41440100, 0x5F, 0x40800100, 0x3F8, 0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x40400000, 0x01,
+            0x40804000, 0x613, 0x42808000, 0x3"/>
+
+        <!-- Live Focus preview full size : POWER_HINT_ID_PREVIEW_LIVE_FOCUS_FULL -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 998Mhz -->
+        <!--L CPU - Set hispeed load 95 -->
+        <!--Change min freq to 1016Mhz -->
+        <!--Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x14,(20) -->
+        <!--Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x1E,(30) -->
+        <!--LPM disable : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 0x01-->
+        <Config
+            Id="0x0000133C" Enable="true" Timeout="0" Target="msmsteppe"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x3F9, 0x41440100, 0x5F, 0x40800100, 0x3F8, 0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x40400000, 0x01"/>
+
+    </Powerhint>
+</HintConfigs>
