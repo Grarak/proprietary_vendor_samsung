@@ -793,7 +793,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a70q/proprietary/vendor/lib/vendor.samsung.hardware.radio.channel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.channel@1.0.so \
     vendor/samsung/a70q/proprietary/vendor/lib/vendor.samsung.hardware.radio.secbridge@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.secbridge@1.0.so \
     vendor/samsung/a70q/proprietary/vendor/lib/vendor.samsung.hardware.radio.sechook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.sechook@1.0.so \
-    vendor/samsung/a70q/proprietary/vendor/lib/vendor.samsung.hardware.radio@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio@1.2.so \
     vendor/samsung/a70q/proprietary/vendor/lib/vendor.samsung.security.drk@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.security.drk@1.0_vendor.so \
     vendor/samsung/a70q/proprietary/vendor/lib/vendor.samsung.security.proca@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.security.proca@1.0.so \
     vendor/samsung/a70q/proprietary/vendor/lib/vndk/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libstagefright_foundation.so \
@@ -1144,7 +1143,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.radio.configsvc@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.configsvc@1.0_vendor.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.radio.secbridge@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.secbridge@1.0.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.radio.sechook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.sechook@1.0.so \
-    vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.radio@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@1.2.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.security.drk@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.security.drk@1.0_vendor.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.security.proca@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.security.proca@1.0.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.security.sem@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.security.sem@1.0.so \
