@@ -27,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a70q/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
     vendor/samsung/a70q/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/samsung/a70q/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
+    vendor/samsung/a70q/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/samsung/a70q/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
     vendor/samsung/a70q/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/samsung/a70q/proprietary/lib64/libseemore.so:system/lib64/libseemore.so \
@@ -55,6 +56,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a70q/proprietary/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti \
     vendor/samsung/a70q/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/samsung/a70q/proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.camera.provider@2.4-service \
+    vendor/samsung/a70q/proprietary/vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.miscpower@1.0-service \
     vendor/samsung/a70q/proprietary/vendor/bin/hw/vendor.samsung.hardware.radio.configsvc@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.radio.configsvc@1.0-service \
     vendor/samsung/a70q/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/samsung/a70q/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
@@ -63,6 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a70q/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/samsung/a70q/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/samsung/a70q/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
+    vendor/samsung/a70q/proprietary/vendor/bin/pm_proxy_helper:$(TARGET_COPY_OUT_VENDOR)/bin/pm_proxy_helper \
     vendor/samsung/a70q/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
     vendor/samsung/a70q/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
     vendor/samsung/a70q/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
@@ -345,6 +348,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a70q/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
     vendor/samsung/a70q/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/samsung/a70q/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@2.4-service.rc \
+    vendor/samsung/a70q/proprietary/vendor/etc/init/vendor.samsung.hardware.miscpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.miscpower@1.0-service.rc \
     vendor/samsung/a70q/proprietary/vendor/etc/init/vendor.samsung.hardware.radio.configsvc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.radio.configsvc@1.0-service.rc \
     vendor/samsung/a70q/proprietary/vendor/etc/init/vendor.samsung.security.drk@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.security.drk@1.0-service.rc \
     vendor/samsung/a70q/proprietary/vendor/etc/init/vendor.samsung.security.sem@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.security.sem@1.0-service.rc \
@@ -419,7 +423,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a70q/proprietary/vendor/firmware/wlan/qca_cld/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin \
     vendor/samsung/a70q/proprietary/vendor/firmware/wlan/qca_cld/grippower.info:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/grippower.info \
     vendor/samsung/a70q/proprietary/vendor/firmware/wlan/qca_cld/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/regdb.bin \
-    vendor/samsung/a70q/proprietary/vendor/firmware/wlanmdsp.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp.mbn \
     vendor/samsung/a70q/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
     vendor/samsung/a70q/proprietary/vendor/lib/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl.so \
     vendor/samsung/a70q/proprietary/vendor/lib/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl.so \
@@ -918,6 +921,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a70q/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
+    vendor/samsung/a70q/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
@@ -1042,6 +1046,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a70q/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
+    vendor/samsung/a70q/proprietary/vendor/lib64/libreffeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreffeature.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/libril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
@@ -1133,6 +1138,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@2.4.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.exthealth@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.exthealth@1.0.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@1.0.so \
+    vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.miscpower@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.miscpower@1.0.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel@1.0.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.radio.configsvc@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.configsvc@1.0_vendor.so \
     vendor/samsung/a70q/proprietary/vendor/lib64/vendor.samsung.hardware.radio.secbridge@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.secbridge@1.0.so \
